@@ -27,10 +27,12 @@ Grower-js
     ```sh
     $ git clone git@github.com:proustibat/grower-js.git
     ```
+    
 2. Run *npm install* script
     ```sh
     $ npm install 
     ```
+
 Npm will download all plugins listed in the packages.json file then a bower install command will download all libraries listed in the bower.json file.  
 
 ## Start
@@ -239,4 +241,4 @@ Download library file in /src/vendors. It will automatically compile grunt dev o
 * [twitter/proustibat](http://twitter.com/proustibat)
 
 ## License
-[GPL-3.0 License](http://www.gnu.org/licenses/gpl-3.0.en.html/) © Proustibat, Inc. 2015
+[GPL-3.0 License](http://www.gnu.org/licenses/gpl-3.0.en.html/) Â© Proustibat, Inc. 2015
