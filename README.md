@@ -5,16 +5,40 @@ Grower-js
 
 > A simple boilerplate for frontend developers for building modular web apps or sites with [Node.js](https://nodejs.org/en/), [Bower](http://bower.io/), [RequireJS](http://requirejs.org/) (amd) and [Grunt](http://gruntjs.com/).
 
-`⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠`
----
-
-/!\ WARNING ! This project is in progress, use at you own risk! /!\
-
-`⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠`
 ---
 
 ## Table of Contents
-*[DocToc](http://doctoc.herokuapp.com/)*
+*generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [Grower-js](#)
+	- [Table of Contents](#)
+	- [Prerequisites](#)
+	- [Installation](#)
+	- [Getting started](#)
+		- [Running boilerplate](#)
+		- [Available tasks](#)
+	- [Working on your app](#)
+		- [Launching Watcher](#)
+		- [Default folder tree](#)
+		- [How to load javascript in a page ?](#)
+		- [What does a module look like?](#)
+		- [Create a new module](#)
+		- [Add a frontend library](#)
+			- [With Bower](#)
+			- [Without Bower](#)
+	- [Advanced Usage](#)
+		- [Customize config.json](#)
+		- [Customize grunt tasks](#)
+		- [Add grunt tasks](#)
+	- [Examples](#)
+	- [Features](#)
+			- [Include all dependencies](#)
+			- [Workflow Automation](#)
+			- [Flexibility](#)
+	- [FAQ/Troubleshotting](#)
+	- [Contribute](#)
+	- [Author](#)
+	- [License](#)
 
 ## Prerequisites
 * Node.js & [npm](https://docs.npmjs.com/getting-started/what-is-npm)
