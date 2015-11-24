@@ -1,13 +1,24 @@
+
+
 Grower-js
 ========
-> A simple boilerplate for frontend developers for building modular web apps or sites with **Node.js**, **Bower**, **RequireJS** (amd) and **Grunt**.
+
+> A simple boilerplate for frontend developers for building modular web apps or sites with [Node.js](https://nodejs.org/en/), [Bower](http://bower.io/), [RequireJS](http://requirejs.org/) (amd) and [Grunt](http://gruntjs.com/).
+
+`⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠`
+---
+
+/!\ WARNING ! This project is in progress, use at you own risk! /!\
+
+`⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠`
+---
 
 ## Table of Contents
 *[DocToc](http://doctoc.herokuapp.com/)*
 
 ## Prerequisites
-* Node.js & npm
-* grunt-cli
+* Node.js & [npm](https://docs.npmjs.com/getting-started/what-is-npm)
+* [grunt-cli] https://github.com/gruntjs/grunt-cli
 
 ## Installation
 1. Clone git repository (or download sources) :
@@ -181,6 +192,8 @@ Download library file in /src/vendors. It will automatically compile grunt dev o
 }
 ```
 ### Customize grunt tasks
+> // TODO
+
 * availabletask
 * bower_concat
 * complexity
