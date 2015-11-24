@@ -1,6 +1,6 @@
 Grower-js
 ========
-> A simple boilerplate for frontend developers for building modular web apps or sites with Node.js, Bower, RequireJS (amd) and Grunt.
+> A simple boilerplate for frontend developers for building modular web apps or sites with **Node.js**, **Bower**, **RequireJS** (amd) and **Grunt**.
 
 ## Table of Contents
 *[DocToc](http://doctoc.herokuapp.com/)*
