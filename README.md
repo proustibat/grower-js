@@ -5,15 +5,6 @@ Grower-js
 
 > A simple boilerplate for frontend developers for building modular web apps or sites with [Node.js](https://nodejs.org/en/), [Bower](http://bower.io/), [RequireJS](http://requirejs.org/) (amd) and [Grunt](http://gruntjs.com/).
 
-
-`⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠`
----
-
-/!\ WARNING ! This project is in progress, use at you own risk! /!\
-
-`⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠``⚠`
----
-
 ## Table of Contents
 *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
