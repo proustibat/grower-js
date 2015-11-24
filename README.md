@@ -49,6 +49,15 @@ $ grunt analyze
 $ grunt open-browser 
 ```
 ## Let's develop the web app
+
+### Watcher
+```sh
+$ grunt dev 
+```
+or simply :
+```sh
+$ grunt  
+```
 ### Default folders structure
 ```
 |-- grower-js
@@ -86,14 +95,8 @@ $ grunt open-browser
         |-- vendors
             |-- put-vendor-here.js
 ```
-### Watcher
-```sh
-$ grunt dev 
-```
-or simply :
-```sh
-$ grunt  
-```
+
+
 ### How is app called in the html page ?
 For information use: 
 ```html
@@ -102,8 +105,63 @@ For information use:
     <script src="js/grower-js-1.0.0.min.js"></script>
 </body>
 ```
+
+### What does a module look like? 
+This is the "module" demo :
+ ```js
+ define('app/module',[
+ 
+ ], function(){
+     "use strict";
+     return function() {
+         return {
+             message: 'Hello Module!',
+             element: null,
+             init: function( element ) {
+                 console.log( 'Module.init : ', element );
+                 this.element = element;
+                 this.element.html( this.message );
+                 var button = $('<button type="button">Click Me!</button>');
+                 this.element.append( button );
+                 $(button).on( 'click', _.bind( this.onClick, this ) );
+                 $(button).trigger( 'click' );
+             },
+             onClick: function( e ) {
+                 console.log( 'Module.onClick' );
+                 e.preventDefault();
+                 e.stopPropagation();
+                 this.element.css({
+                     color: '#'+((1<<24)*Math.random()|0).toString(16),
+                     backgroundColor: '#'+((1<<24)*Math.random()|0).toString(16)
+                 });
+             }
+         };
+     };
+ });
+```
+Note that returning a function is a way to access the "new" constructor as below.
+
+This is the "main" module in the demo : 
+```js
+define('main',[                     // Module name
+    'app/module'                    // Path to module file required 
+], function(Module){                // Alias for the class name of the required module
+    "use strict";
+
+    $('h1').html( 'Hello Main !' );
+
+    var fooModule = new Module();   // Instanciation
+    fooModule.init( $('.foo') );    // init call method
+
+    var barModule = new Module();
+    barModule.init( $('.bar') );
+});
+```
+The "main" module instanciates 2 "Module" objects and call its "init" method.
+
 ### Create a new module
->> // TODO
+> // TODO
+
 ### Add a frontend library
 #### With Bower
 ```sh
@@ -145,7 +203,7 @@ Download library file in /src/vendors. It will automatically compile grunt dev o
 * watch
 
 ### Add grunt tasks
->> // TODO
+> // TODO
 
 ## Running Demos
 **Single one page app**
@@ -159,16 +217,17 @@ Download library file in /src/vendors. It will automatically compile grunt dev o
 
 ## FAQ/Troubleshotting
 **Localhost / open-browser**
->> // TODO
+> // TODO
+
 * Check wamp configuration
 * Check root location
 * Check browser configuration in config.json
 
 **RequireJS / Almond**
->> // TODO
+> // TODO
 
 **// Todo**
->> // TODO
+> // TODO
 
 ## Contribute
 * Issue Tracker: https://github.com/proustibat/grower-js/issues
