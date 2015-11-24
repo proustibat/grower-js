@@ -1,3 +1,22 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Grower-js](#grower-js)
+  - [Table of Contents](#table-of-contents)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Getting started](#getting-started)
+    - [Running boilerplate](#running-boilerplate)
+    - [Available tasks](#available-tasks)
+  - [Working on your app](#working-on-your-app)
+    - [Launching Watcher](#launching-watcher)
+    - [Default folder tree](#default-folder-tree)
+    - [How to load javascript in a page ?](#how-to-load-javascript-in-a-page-)
+    - [What does a module look like?](#what-does-a-module-look-like)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 
 Grower-js
