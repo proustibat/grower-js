@@ -1,3 +1,25 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Grower-js](#grower-js)
+      - [Include all dependencies](#include-all-dependencies)
+      - [Workflow Automation](#workflow-automation)
+      - [Flexibility](#flexibility)
+  - [Table of Contents](#table-of-contents)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Start](#start)
+    - [Running grower-js boilerplate](#running-grower-js-boilerplate)
+    - [Available tasks](#available-tasks)
+  - [Let's develop the web app](#lets-develop-the-web-app)
+    - [Watcher](#watcher)
+    - [Default folders structure](#default-folders-structure)
+    - [How is app called in the html page ?](#how-is-app-called-in-the-html-page-)
+    - [What does a module look like?](#what-does-a-module-look-like)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 Grower-js
 ========
 > A simple boilerplate for frontend developers for building modular web apps or sites with Node.js, Bower, RequireJS (amd) and Grunt.
@@ -239,4 +261,4 @@ Download library file in /src/vendors. It will automatically compile grunt dev o
 * [twitter/proustibat](http://twitter.com/proustibat)
 
 ## License
-[GPL-3.0 License](http://www.gnu.org/licenses/gpl-3.0.en.html/) © Proustibat, Inc. 2015
+[GPL-3.0 License](http://www.gnu.org/licenses/gpl-3.0.en.html/) ï¿½ Proustibat, Inc. 2015
