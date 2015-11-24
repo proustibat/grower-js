@@ -2,19 +2,6 @@ Grower-js
 ========
 > A simple boilerplate for frontend developers for building modular web apps or sites with Node.js, Bower, RequireJS (amd) and Grunt.
 
-#### Include all dependencies 
-* **Npm** is the tool provided with Node.JS. It is used to get tools and frameworks while automatically resolving their dependencies via the package.json file.
-* **Bower** simplify dependency management. It's a package manager for frontend libraries which are listed in a bower.json file. 
-
-#### Workflow Automation
-* **Grunt** is a task runner. It can be set to automatically load plugins. Those tasks combine and minify javaScript files; check code for errors; compile SASS to CSS.
-* **Grower-JS** can run essential tasks for a frontend developer : watch changed files to rerun automatically tasks, run build task to generate files to deploy,  check code quality with jsHint and analyze code complexity to get a better maintainability.
-
-#### Flexibility
-* A config.json file allows to change most of paths and folders either for the architecture in source files or for the generated files.
-* Easily customizable: can integrate lots of libraries which can be installed with Bower tool or manually added in a vendors directory. By default, it includes jQuery and Underscore.js, which could be uninstalled if those aren't necessary.
-* No framework, no skeleton. The core app hasn't to follow the rules of a base structure. All types of sites or web app can be developed from this kickstarter. 
-
 ## Table of Contents
 *[DocToc](http://doctoc.herokuapp.com/)*
 
@@ -24,7 +11,7 @@ Grower-js
 
 ## Installation
 1. Clone git repository (or download sources) :
-    ```sh
+    ```shs
     $ git clone git@github.com:proustibat/grower-js.git
     ```
     
@@ -35,8 +22,8 @@ Grower-js
 
 Npm will download all plugins listed in the packages.json file then a bower install command will download all libraries listed in the bower.json file.  
 
-## Start
-### Running grower-js boilerplate
+## Getting started
+### Running boilerplate
 ```sh
 $ grunt prod 
 ```
@@ -50,9 +37,9 @@ $ grunt prod
 $ grunt analyze 
 $ grunt open-browser 
 ```
-## Let's develop the web app
+## Working on your app
 
-### Watcher
+### Launching Watcher
 ```sh
 $ grunt dev 
 ```
@@ -60,7 +47,7 @@ or simply :
 ```sh
 $ grunt  
 ```
-### Default folders structure
+### Default folder tree
 ```
 |-- grower-js
     |-- .bowerrc
@@ -99,11 +86,11 @@ $ grunt
 ```
 
 
-### How is app called in the html page ?
+### How to load javascript in a page ?
 For information use: 
 ```html
     ...
-    <script src="vendors/vendors.min.js"></script>
+    <script src="vendors/vendors.min.js"></script> 
     <script src="js/grower-js-1.0.0.min.js"></script>
 </body>
 ```
@@ -207,7 +194,7 @@ Download library file in /src/vendors. It will automatically compile grunt dev o
 ### Add grunt tasks
 > // TODO
 
-## Running Demos
+## Examples
 **Single one page app**
 > // TODO
 
@@ -216,6 +203,20 @@ Download library file in /src/vendors. It will automatically compile grunt dev o
 
 **Simple templating with Underscore**
 > // TODO
+
+## Features
+#### Include all dependencies 
+* **Npm** is the tool provided with Node.JS. It is used to get tools and frameworks while automatically resolving their dependencies via the package.json file.
+* **Bower** simplify dependency management. It's a package manager for frontend libraries which are listed in a bower.json file. 
+
+#### Workflow Automation
+* **Grunt** is a task runner. It can be set to automatically load plugins. Those tasks combine and minify javaScript files; check code for errors; compile SASS to CSS.
+* **Grower-JS** can run essential tasks for a frontend developer : watch changed files to rerun automatically tasks, run build task to generate files to deploy,  check code quality with jsHint and analyze code complexity to get a better maintainability.
+
+#### Flexibility
+* A config.json file allows to change most of paths and folders either for the architecture in source files or for the generated files.
+* Easily customizable: can integrate lots of libraries which can be installed with Bower tool or manually added in a vendors directory. By default, it includes jQuery and Underscore.js, which could be uninstalled if those aren't necessary.
+* No framework, no skeleton. The core app hasn't to follow the rules of a base structure. All types of sites or web app can be developed from this kickstarter. 
 
 ## FAQ/Troubleshotting
 **Localhost / open-browser**
