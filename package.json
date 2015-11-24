@@ -1,0 +1,61 @@
+{
+  "name": "grower-js",
+  "version": "1.0.0",
+  "title": "Grower-JS Kickstarter",
+  "description": "A simple boilerplate for building modular web apps or sites with RequireJS, Grunt and Bower.",
+  "keywords": [
+    "javascript",
+    "grunt",
+    "requirejs",
+    "almond",
+    "bower",
+    "kickstarter",
+    "boilerplate",
+    "scaffolding",
+    "start",
+    "underscore",
+    "jquery",
+    "object-oriented",
+    "webapp",
+    "front-end",
+    "architecture",
+    "modular",
+    "amd",
+    "jshint"
+  ],
+  "homepage": "http://proustibat.github.io/grower-js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/proustibat/grower-js.git"
+  },
+  "main": "grower-js-1.0.0.min.js",
+  "author": "Jennifer Proust <jennifer.proust@gmail.com> (http://www.twitter.com/@proustibat)",
+  "license": "GPL-3.0",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "grunt-available-tasks": "^0.6.1",
+    "grunt-banner": "^0.6.0",
+    "grunt-bower-concat": "^0.6.0",
+    "grunt-complexity": "^0.3.0",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-newer": "^1.1.1",
+    "grunt-open": "^0.2.3",
+    "jshint-stylish": "^2.1.0",
+    "mddir": "^1.0.9",
+    "require": "^2.4.20",
+    "time-grunt": "^1.2.2"
+  },
+  "dependencies": {
+    "bower": "^1.6.5",
+    "grunt": "^0.4.5"
+  },
+  "scripts": {
+    "postinstall": "bower install --allow-root"
+  },
+  "private": true
+}

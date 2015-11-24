@@ -1,0 +1,18 @@
+{
+  "root_src": "src",
+  "root_public": "public",
+  "dir_vendors": "vendors",
+  "dir_js": "js",
+  "dir_css": "css",
+  "gruntfile": "Gruntfile.js",
+  "pkgjson_file": "package.json",
+  "bowerrc_file": ".bowerrc",
+  "dir_grunt": "./grunt",
+  "output_js_app": false,
+  "output_js_vendors": false,
+  "host": {
+    "local": "http://localhost/grower-js/public"
+  },
+  "global_namespace": "grwr",
+  "browser": "Chrome"
+}
