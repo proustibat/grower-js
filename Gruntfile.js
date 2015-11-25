@@ -45,6 +45,14 @@ module.exports = function( grunt ) {
         // List available Grunt tasks & targets.
         availabletasks: require( config.dir_grunt + '/availabletasks' )
 
+        // Publish to GitHub pages
+        /*'gh-pages': {
+            options: {
+                base: 'public'
+            },
+            src: ['**']
+        }*/
+
     });
 
 
@@ -58,6 +66,7 @@ module.exports = function( grunt ) {
     grunt.loadNpmTasks( 'grunt-newer' );
     grunt.loadNpmTasks( 'grunt-banner' );
     grunt.loadNpmTasks( 'grunt-available-tasks' );
+    grunt.loadNpmTasks( 'grunt-gh-pages' );
 
 
 

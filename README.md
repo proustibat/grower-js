@@ -51,7 +51,7 @@ ___
 ___
 
 ## Features
-#### Include all dependencies 
+#### All dependencies included
 * **Npm** is the tool provided with Node.JS. It is used to get tools and frameworks while automatically resolving their dependencies via the package.json file.
 * **Bower** simplify dependency management. It's a package manager for frontend libraries which are listed in a bower.json file. 
 
