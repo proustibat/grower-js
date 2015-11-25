@@ -18,6 +18,10 @@ ___
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+- [Features](#features)
+    - [Include all dependencies](#include-all-dependencies)
+    - [Workflow Automation](#workflow-automation)
+    - [Flexibility](#flexibility)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Getting started](#getting-started)
@@ -37,10 +41,6 @@ ___
   - [Customize grunt tasks](#customize-grunt-tasks)
   - [Add grunt tasks](#add-grunt-tasks)
 - [Examples](#examples)
-- [Features](#features)
-    - [Include all dependencies](#include-all-dependencies)
-    - [Workflow Automation](#workflow-automation)
-    - [Flexibility](#flexibility)
 - [FAQ/Troubleshotting](#faqtroubleshotting)
 - [Contribute](#contribute)
 - [Author](#author)
@@ -50,9 +50,25 @@ ___
 
 ___
 
+## Features
+#### Include all dependencies 
+* **Npm** is the tool provided with Node.JS. It is used to get tools and frameworks while automatically resolving their dependencies via the package.json file.
+* **Bower** simplify dependency management. It's a package manager for frontend libraries which are listed in a bower.json file. 
+
+#### Workflow Automation
+* **Grunt** is a task runner. It can be set to automatically load plugins. Those tasks combine and minify javaScript files; check code for errors; compile SASS to CSS.
+* **Grower-JS** can run essential tasks for a frontend developer : watch changed files to rerun automatically tasks, run build task to generate files to deploy,  check code quality with jsHint and analyze code complexity to get a better maintainability.
+
+#### Flexibility
+* A config.json file allows to change most of paths and folders either for the architecture in source files or for the generated files.
+* Easily customizable: can integrate lots of libraries which can be installed with Bower tool or manually added in a vendors directory. By default, it includes jQuery and Underscore.js, which could be uninstalled if those aren't necessary.
+* No framework, no skeleton. The core app hasn't to follow the rules of a base structure. All types of sites or web app can be developed from this kickstarter.
+
+___
+
 ## Prerequisites
 * Node.js & [npm](https://docs.npmjs.com/getting-started/what-is-npm)
-* [grunt-cli] https://github.com/gruntjs/grunt-cli
+* [grunt-cli](https://github.com/gruntjs/grunt-cli)
 
 ## Installation
 1. Clone git repository (or download sources) :
@@ -249,21 +265,7 @@ Download library file in /src/vendors. It will automatically compile grunt dev o
 > // TODO
 
 **Simple templating with Underscore**
-> // TODO
-
-## Features
-#### Include all dependencies 
-* **Npm** is the tool provided with Node.JS. It is used to get tools and frameworks while automatically resolving their dependencies via the package.json file.
-* **Bower** simplify dependency management. It's a package manager for frontend libraries which are listed in a bower.json file. 
-
-#### Workflow Automation
-* **Grunt** is a task runner. It can be set to automatically load plugins. Those tasks combine and minify javaScript files; check code for errors; compile SASS to CSS.
-* **Grower-JS** can run essential tasks for a frontend developer : watch changed files to rerun automatically tasks, run build task to generate files to deploy,  check code quality with jsHint and analyze code complexity to get a better maintainability.
-
-#### Flexibility
-* A config.json file allows to change most of paths and folders either for the architecture in source files or for the generated files.
-* Easily customizable: can integrate lots of libraries which can be installed with Bower tool or manually added in a vendors directory. By default, it includes jQuery and Underscore.js, which could be uninstalled if those aren't necessary.
-* No framework, no skeleton. The core app hasn't to follow the rules of a base structure. All types of sites or web app can be developed from this kickstarter. 
+> // TODO 
 
 ## FAQ/Troubleshotting
 **Localhost / open-browser**
