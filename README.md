@@ -97,6 +97,7 @@ $ grunt dev
 $ grunt prod 
 $ grunt analyze 
 $ grunt open-browser 
+$ grunt deploy-github 
 ```
 ## Working on your app
 
