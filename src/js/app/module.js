@@ -1,7 +1,7 @@
+"use strict";
 define('app/module',[
 
 ], function(){
-    "use strict";
     return function() {
         return {
             message: 'Hello Module!',

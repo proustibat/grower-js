@@ -1,7 +1,8 @@
+/*jshint strict: true */
+"use strict";
 define('main',[
     'app/module'
 ], function(Module){
-    "use strict";
 
     $('h1').html( 'Hello Main !' );
 
@@ -14,6 +15,5 @@ define('main',[
 
 
 $(document).ready(function() {
-    'use strict';
     require( ['main'] );
 });
