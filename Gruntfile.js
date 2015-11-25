@@ -43,15 +43,10 @@ module.exports = function( grunt ) {
         open: require( config.dir_grunt + '/open' ),
 
         // List available Grunt tasks & targets.
-        availabletasks: require( config.dir_grunt + '/availabletasks' )
+        availabletasks: require( config.dir_grunt + '/availabletasks' ),
 
-        // Publish to GitHub pages
-        /*'gh-pages': {
-            options: {
-                base: 'public'
-            },
-            src: ['**']
-        }*/
+        // Publish to GitHub Pages
+        'gh-pages': require( config.dir_grunt + '/gh-pages' ),
 
     });
 
