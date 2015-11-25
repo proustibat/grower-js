@@ -246,7 +246,8 @@ Download library file in /src/vendors. It will automatically compile grunt dev o
 
 * availabletask
 * bower_concat
-* complexity
+* analyze with complexity 
+* gh-pages and deploy-github
 * jshint
 * open
 * requirejs

@@ -46,7 +46,7 @@ module.exports = function( grunt ) {
         availabletasks: require( config.dir_grunt + '/availabletasks' ),
 
         // Publish to GitHub Pages
-        'gh-pages': require( config.dir_grunt + '/gh-pages' ),
+        'gh-pages': require( config.dir_grunt + '/gh-pages' )
 
     });
 
@@ -61,9 +61,6 @@ module.exports = function( grunt ) {
     grunt.loadNpmTasks( 'grunt-newer' );
     grunt.loadNpmTasks( 'grunt-banner' );
     grunt.loadNpmTasks( 'grunt-available-tasks' );
-    grunt.loadNpmTasks( 'grunt-gh-pages' );
-
-
 
     // TASKS =======================================================/
     grunt.registerTask( 'default', [ "dev" ] );
@@ -101,5 +98,14 @@ module.exports = function( grunt ) {
     grunt.registerTask( 'open-browser', 'Open browser in local environment', function() {
         grunt.loadNpmTasks( 'grunt-open' );
         grunt.task.run( 'open:local' );
+    });
+
+
+    // Run it to deploy on your github pages branch
+    grunt.registerTask( 'deploy-github', 'Commit and push public dir in gh-pages github branch to deploy on github site', function() {
+        grunt.loadNpmTasks( 'grunt-gitinfo' );
+        grunt.loadNpmTasks( 'grunt-gh-pages' );
+        grunt.loadNpmTasks( 'grunt-open' );
+        grunt.task.run([ 'gitinfo', 'gh-pages', 'open:github' ]);
     });
 };

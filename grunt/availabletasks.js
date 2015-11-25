@@ -6,10 +6,11 @@ module.exports = {
                 "For non developers": [
                     'open-browser'
                 ],
-                    "For developers": [
+                "For developers": [
                     'dev',
                     'prod',
-                    'analyze'
+                    'analyze',
+                    'deploy-github'
                 ]
             },
             showTasks: ['user']
