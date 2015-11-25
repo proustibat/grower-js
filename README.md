@@ -1,4 +1,4 @@
-Grower-js
+Grower-js [![Code Climate](https://codeclimate.com/github/proustibat/grower-js/badges/gpa.svg)](https://codeclimate.com/github/proustibat/grower-js)
 ========
 
 > A simple boilerplate for frontend developers for building modular web apps or sites with [Node.js](https://nodejs.org/en/), [Bower](http://bower.io/), [RequireJS](http://requirejs.org/) (amd) and [Grunt](http://gruntjs.com/).
