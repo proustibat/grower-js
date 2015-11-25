@@ -10,18 +10,33 @@ ___
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Grower-js
-](#grower-js)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Getting started](#getting-started)
-    - [Running boilerplate](#running-boilerplate)
-    - [Available tasks](#available-tasks)
-  - [Working on your app](#working-on-your-app)
-    - [Launching Watcher](#launching-watcher)
-    - [Default folder tree](#default-folder-tree)
-    - [How to load javascript in a page ?](#how-to-load-javascript-in-a-page-)
-    - [What does a module look like?](#what-does-a-module-look-like)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Getting started](#getting-started)
+  - [Running boilerplate](#running-boilerplate)
+  - [Available tasks](#available-tasks)
+- [Working on your app](#working-on-your-app)
+  - [Launching Watcher](#launching-watcher)
+  - [Default folder tree](#default-folder-tree)
+  - [How to load javascript in a page ?](#how-to-load-javascript-in-a-page-)
+  - [What does a module look like?](#what-does-a-module-look-like)
+  - [Create a new module](#create-a-new-module)
+  - [Add a frontend library](#add-a-frontend-library)
+    - [With Bower](#with-bower)
+    - [Without Bower](#without-bower)
+- [Advanced Usage](#advanced-usage)
+  - [Customize config.json](#customize-configjson)
+  - [Customize grunt tasks](#customize-grunt-tasks)
+  - [Add grunt tasks](#add-grunt-tasks)
+- [Examples](#examples)
+- [Features](#features)
+    - [Include all dependencies](#include-all-dependencies)
+    - [Workflow Automation](#workflow-automation)
+    - [Flexibility](#flexibility)
+- [FAQ/Troubleshotting](#faqtroubleshotting)
+- [Contribute](#contribute)
+- [Author](#author)
+- [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -119,50 +134,50 @@ For information use:
 
 ### What does a module look like? 
 This is the "module" demo :
- ```js
- define('app/module',[
+ ```
+ define('app/module',\[
  
- ], function(){
+ \], function\(\)\{
      "use strict";
-     return function() {
-         return {
-             message: 'Hello Module!',
+     return function\(\) \{
+         return \{
+             message: 'Hello Module\!',
              element: null,
-             init: function( element ) {
-                 console.log( 'Module.init : ', element );
+             init: function\( element \) \{
+                 console.log\( 'Module.init : ', element \);
                  this.element = element;
-                 this.element.html( this.message );
-                 var button = $('<button type="button">Click Me!</button>');
-                 this.element.append( button );
-                 $(button).on( 'click', _.bind( this.onClick, this ) );
-                 $(button).trigger( 'click' );
+                 this.element.html\( this.message \);
+                 var button = $\('<button type="button">Click Me\!</button>'\);
+                 this.element.append\( button \);
+                 $\(button\).on\( 'click', \_.bind\( this.onClick, this \) \);
+                 $\(button\).trigger\( 'click' \);
              },
-             onClick: function( e ) {
-                 console.log( 'Module.onClick' );
-                 e.preventDefault();
-                 e.stopPropagation();
-                 this.element.css({
-                     color: '#'+((1<<24)*Math.random()|0).toString(16),
-                     backgroundColor: '#'+((1<<24)*Math.random()|0).toString(16)
-                 });
-             }
-         };
-     };
- });
-```
+             onClick: function\( e \) {
+                 console.log\( 'Module.onClick' \);
+                 e.preventDefault\(\);
+                 e.stopPropagation\(\);
+                 this.element.css\(\{
+                     color: '\#'\+\(\(1\<\<24\)\*Math.random\(\)|0\).toString\(16\),
+                     backgroundColor: '\#'\+\(\(1\<\<24\)\*Math.random\(\)|0\).toString\(16\)
+                 \}\);
+             \}
+         \};
+     \};
+ \}\);
+ ```
 Note that returning a function is a way to access the "new" constructor as below.
 
 This is the "main" module in the demo : 
 ```js
-define('main',[                     // Module name
-    'app/module'                    // Path to module file required 
-], function(Module){                // Alias for the class name of the required module
+define('main',\[                     \/\/ Module name
+    'app/module'                    \/\/ Path to module file required 
+\], function(Module){                \/\/ Alias for the class name of the required module
     "use strict";
 
     $('h1').html( 'Hello Main !' );
 
-    var fooModule = new Module();   // Instanciation
-    fooModule.init( $('.foo') );    // init call method
+    var fooModule = new Module();   \/\/ Instanciation
+    fooModule.init( $('.foo') );    \/\/ init call method
 
     var barModule = new Module();
     barModule.init( $('.bar') );
@@ -171,7 +186,7 @@ define('main',[                     // Module name
 The "main" module instanciates 2 "Module" objects and call its "init" method.
 
 ### Create a new module
-> // TODO
+...
 
 ### Add a frontend library
 #### With Bower
@@ -203,7 +218,7 @@ Download library file in /src/vendors. It will automatically compile grunt dev o
 }
 ```
 ### Customize grunt tasks
-> // TODO
+> TODO
 
 * availabletask
 * bower_concat
