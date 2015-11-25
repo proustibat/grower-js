@@ -33,6 +33,7 @@ module.exports = {
         options: {
             mangle: false,
             sourceMap: true,
+            sourceMapName: '<%= config.dir_tmp %>/<%= config.output_js_app || pkg.name + \'-\' + pkg.version %>.map',
             sourceMapIncludeSources: true,
             compress: false,
             beautify: true,

@@ -14,5 +14,6 @@
     "local": "http://localhost/grower-js/public"
   },
   "global_namespace": "grwr",
-  "browser": "Chrome"
+  "browser": "Chrome",
+  "dir_tmp": "tmp"
 }

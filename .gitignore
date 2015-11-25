@@ -1,6 +1,6 @@
 /.idea
 /node_modules
-/src/bwr_libs
+/tmp
 /bower_components
 *.iml
 /public/js/*.map
