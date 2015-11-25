@@ -1,0 +1,463 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Grower-js by proustibat</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Grower-js</h1>
+        <p>Base template to bootstrap a frontend project with Grunt, Bower and RequireJS.</p>
+
+        <p class="view"><a href="https://github.com/proustibat/grower-js">View the Project on GitHub <small>proustibat/grower-js</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/proustibat/grower-js/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/proustibat/grower-js/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/proustibat/grower-js">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="grower-js" class="anchor" href="#grower-js" aria-hidden="true"><span class="octicon octicon-link"></span></a>Grower-js</h1>
+
+<blockquote>
+<p>A simple boilerplate for frontend developers for building modular web apps or sites with <a href="https://nodejs.org/en/">Node.js</a>, <a href="http://bower.io/">Bower</a>, <a href="http://requirejs.org/">RequireJS</a> (amd) and <a href="http://gruntjs.com/">Grunt</a>.</p>
+</blockquote>
+
+<hr>
+
+<h2>
+<a id="" class="anchor" href="#" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>⚠</code><code>⚠</code><code>⚠</code><code>⚠</code><code>⚠</code><code>⚠</code><code>⚠</code><code>⚠</code><code>⚠</code><code>⚠</code><code>⚠</code>
+</h2>
+
+<p>/!\ WARNING ! This project is in progress, use at you own risk! /!\</p>
+
+<h2>
+<a id="-1" class="anchor" href="#-1" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>⚠</code><code>⚠</code><code>⚠</code><code>⚠</code><code>⚠</code><code>⚠</code><code>⚠</code><code>⚠</code><code>⚠</code><code>⚠</code><code>⚠</code>
+</h2>
+
+
+
+
+
+<p><strong>Table of Contents</strong>  <em>generated with <a href="https://github.com/thlorenz/doctoc">DocToc</a></em></p>
+
+<ul>
+<li>
+<a href="#features">Features</a>
+
+<ul>
+<li><a href="#include-all-dependencies">Include all dependencies</a></li>
+<li><a href="#workflow-automation">Workflow Automation</a></li>
+<li><a href="#flexibility">Flexibility</a></li>
+</ul>
+</li>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#installation">Installation</a></li>
+<li>
+<a href="#getting-started">Getting started</a>
+
+<ul>
+<li><a href="#running-boilerplate">Running boilerplate</a></li>
+<li><a href="#available-tasks">Available tasks</a></li>
+</ul>
+</li>
+<li>
+<a href="#working-on-your-app">Working on your app</a>
+
+<ul>
+<li><a href="#launching-watcher">Launching Watcher</a></li>
+<li><a href="#default-folder-tree">Default folder tree</a></li>
+<li><a href="#how-to-load-javascript-in-a-page-">How to load javascript in a page ?</a></li>
+<li><a href="#what-does-a-module-look-like">What does a module look like?</a></li>
+<li><a href="#create-a-new-module">Create a new module</a></li>
+<li>
+<a href="#add-a-frontend-library">Add a frontend library</a>
+
+<ul>
+<li><a href="#with-bower">With Bower</a></li>
+<li><a href="#without-bower">Without Bower</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#advanced-usage">Advanced Usage</a>
+
+<ul>
+<li><a href="#customize-configjson">Customize config.json</a></li>
+<li><a href="#customize-grunt-tasks">Customize grunt tasks</a></li>
+<li><a href="#add-grunt-tasks">Add grunt tasks</a></li>
+</ul>
+</li>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#faqtroubleshotting">FAQ/Troubleshotting</a></li>
+<li><a href="#contribute">Contribute</a></li>
+<li><a href="#author">Author</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+
+
+
+<hr>
+
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<h4>
+<a id="include-all-dependencies" class="anchor" href="#include-all-dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Include all dependencies</h4>
+
+<ul>
+<li>
+<strong>Npm</strong> is the tool provided with Node.JS. It is used to get tools and frameworks while automatically resolving their dependencies via the package.json file.</li>
+<li>
+<strong>Bower</strong> simplify dependency management. It's a package manager for frontend libraries which are listed in a bower.json file. </li>
+</ul>
+
+<h4>
+<a id="workflow-automation" class="anchor" href="#workflow-automation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflow Automation</h4>
+
+<ul>
+<li>
+<strong>Grunt</strong> is a task runner. It can be set to automatically load plugins. Those tasks combine and minify javaScript files; check code for errors; compile SASS to CSS.</li>
+<li>
+<strong>Grower-JS</strong> can run essential tasks for a frontend developer : watch changed files to rerun automatically tasks, run build task to generate files to deploy,  check code quality with jsHint and analyze code complexity to get a better maintainability.</li>
+</ul>
+
+<h4>
+<a id="flexibility" class="anchor" href="#flexibility" aria-hidden="true"><span class="octicon octicon-link"></span></a>Flexibility</h4>
+
+<ul>
+<li>A config.json file allows to change most of paths and folders either for the architecture in source files or for the generated files.</li>
+<li>Easily customizable: can integrate lots of libraries which can be installed with Bower tool or manually added in a vendors directory. By default, it includes jQuery and Underscore.js, which could be uninstalled if those aren't necessary.</li>
+<li>No framework, no skeleton. The core app hasn't to follow the rules of a base structure. All types of sites or web app can be developed from this kickstarter.</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="prerequisites" class="anchor" href="#prerequisites" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prerequisites</h2>
+
+<ul>
+<li>Node.js &amp; <a href="https://docs.npmjs.com/getting-started/what-is-npm">npm</a>
+</li>
+<li><a href="https://github.com/gruntjs/grunt-cli">grunt-cli</a></li>
+</ul>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<ol>
+<li>
+<p>Clone git repository (or download sources) :</p>
+
+<pre lang="shs"><code>$ git clone git@github.com:proustibat/grower-js.git
+</code></pre>
+</li>
+<li>
+<p>Run <em>npm install</em> script</p>
+
+<div class="highlight highlight-source-shell"><pre>$ npm install </pre></div>
+</li>
+</ol>
+
+<p>Npm will download all plugins listed in the packages.json file then a bower install command will download all libraries listed in the bower.json file.  </p>
+
+<h2>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting started</h2>
+
+<h3>
+<a id="running-boilerplate" class="anchor" href="#running-boilerplate" aria-hidden="true"><span class="octicon octicon-link"></span></a>Running boilerplate</h3>
+
+<div class="highlight highlight-source-shell"><pre>$ grunt prod </pre></div>
+
+<p>It launches automatically a browser at for example <a href="http://localhost/grower-js/public">http://localhost/grower-js/public</a> after all tasks have run.</p>
+
+<h3>
+<a id="available-tasks" class="anchor" href="#available-tasks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Available tasks</h3>
+
+<div class="highlight highlight-source-shell"><pre>$ grunt availabletasks 
+$ grunt dev 
+$ grunt prod 
+$ grunt analyze 
+$ grunt open-browser </pre></div>
+
+<h2>
+<a id="working-on-your-app" class="anchor" href="#working-on-your-app" aria-hidden="true"><span class="octicon octicon-link"></span></a>Working on your app</h2>
+
+<h3>
+<a id="launching-watcher" class="anchor" href="#launching-watcher" aria-hidden="true"><span class="octicon octicon-link"></span></a>Launching Watcher</h3>
+
+<div class="highlight highlight-source-shell"><pre>$ grunt dev </pre></div>
+
+<p>or simply :</p>
+
+<div class="highlight highlight-source-shell"><pre>$ grunt  </pre></div>
+
+<h3>
+<a id="default-folder-tree" class="anchor" href="#default-folder-tree" aria-hidden="true"><span class="octicon octicon-link"></span></a>Default folder tree</h3>
+
+<pre><code>|-- grower-js
+    |-- .bowerrc
+    |-- .gitignore
+    |-- .jshintrc
+    |-- bower.json
+    |-- config.json
+    |-- Gruntfile.js
+    |-- LICENSE
+    |-- package.json
+    |-- README.md
+    |-- grunt
+    |   |-- availabletasks.js
+    |   |-- bower_concat.js
+    |   |-- complexity.js
+    |   |-- jshint.js
+    |   |-- open.js
+    |   |-- requirejs.js
+    |   |-- uglify.js
+    |   |-- usebanner.js
+    |   |-- watch.js
+    |-- public
+    |   |-- index.html
+    |   |-- js
+    |   |   |-- grower-js-1.0.0.min.js
+    |   |   |-- grower-js-1.0.0.min.js.map
+    |   |-- vendors
+    |       |-- vendors.min.js
+    |-- src
+        |-- js
+        |   |-- main.js
+        |   |-- app
+        |       |-- module.js
+        |-- vendors
+            |-- put-vendor-here.js
+</code></pre>
+
+<h3>
+<a id="how-to-load-javascript-in-a-page-" class="anchor" href="#how-to-load-javascript-in-a-page-" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to load javascript in a page ?</h3>
+
+<p>For information use: </p>
+
+<div class="highlight highlight-text-html-basic"><pre>    ...
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>vendors/vendors.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt; </span>
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>js/grower-js-1.0.0.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+&lt;/<span class="pl-ent">body</span>&gt;</pre></div>
+
+<h3>
+<a id="what-does-a-module-look-like" class="anchor" href="#what-does-a-module-look-like" aria-hidden="true"><span class="octicon octicon-link"></span></a>What does a module look like?</h3>
+
+<p>This is the "module" demo :</p>
+
+<pre><code> define('app/module',\[
+
+ \], function\(\)\{
+     "use strict";
+     return function\(\) \{
+         return \{
+             message: 'Hello Module\!',
+             element: null,
+             init: function\( element \) \{
+                 console.log\( 'Module.init : ', element \);
+                 this.element = element;
+                 this.element.html\( this.message \);
+                 var button = $\('&lt;button type="button"&gt;Click Me\!&lt;/button&gt;'\);
+                 this.element.append\( button \);
+                 $\(button\).on\( 'click', \_.bind\( this.onClick, this \) \);
+                 $\(button\).trigger\( 'click' \);
+             },
+             onClick: function\( e \) {
+                 console.log\( 'Module.onClick' \);
+                 e.preventDefault\(\);
+                 e.stopPropagation\(\);
+                 this.element.css\(\{
+                     color: '\#'\+\(\(1\&lt;\&lt;24\)\*Math.random\(\)|0\).toString\(16\),
+                     backgroundColor: '\#'\+\(\(1\&lt;\&lt;24\)\*Math.random\(\)|0\).toString\(16\)
+                 \}\);
+             \}
+         \};
+     \};
+ \}\);
+</code></pre>
+
+<p>Note that returning a function is a way to access the "new" constructor as below.</p>
+
+<p>This is the "main" module in the demo : </p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">define</span>(<span class="pl-s"><span class="pl-pds">'</span>main<span class="pl-pds">'</span></span>,\[                     \<span class="pl-k">/</span>\<span class="pl-k">/</span> Module name
+    <span class="pl-s"><span class="pl-pds">'</span>app/module<span class="pl-pds">'</span></span>                    \<span class="pl-k">/</span>\<span class="pl-k">/</span> Path to <span class="pl-c1">module</span> file required 
+\], <span class="pl-k">function</span>(<span class="pl-smi">Module</span>){                \<span class="pl-k">/</span>\<span class="pl-k">/</span> Alias <span class="pl-k">for</span> the <span class="pl-k">class</span> <span class="pl-en">name</span> <span class="pl-k">of</span> the required <span class="pl-c1">module</span>
+    <span class="pl-s"><span class="pl-pds">"</span>use strict<span class="pl-pds">"</span></span>;
+
+    $(<span class="pl-s"><span class="pl-pds">'</span>h1<span class="pl-pds">'</span></span>).<span class="pl-en">html</span>( <span class="pl-s"><span class="pl-pds">'</span>Hello Main !<span class="pl-pds">'</span></span> );
+
+    <span class="pl-k">var</span> fooModule <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Module</span>();   \<span class="pl-k">/</span>\<span class="pl-k">/</span> Instanciation
+    <span class="pl-smi">fooModule</span>.<span class="pl-en">init</span>( $(<span class="pl-s"><span class="pl-pds">'</span>.foo<span class="pl-pds">'</span></span>) );    \<span class="pl-k">/</span>\<span class="pl-k">/</span> init call method
+
+    <span class="pl-k">var</span> barModule <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Module</span>();
+    <span class="pl-smi">barModule</span>.<span class="pl-en">init</span>( $(<span class="pl-s"><span class="pl-pds">'</span>.bar<span class="pl-pds">'</span></span>) );
+});</pre></div>
+
+<p>The "main" module instanciates 2 "Module" objects and call its "init" method.</p>
+
+<h3>
+<a id="create-a-new-module" class="anchor" href="#create-a-new-module" aria-hidden="true"><span class="octicon octicon-link"></span></a>Create a new module</h3>
+
+<p>...</p>
+
+<h3>
+<a id="add-a-frontend-library" class="anchor" href="#add-a-frontend-library" aria-hidden="true"><span class="octicon octicon-link"></span></a>Add a frontend library</h3>
+
+<h4>
+<a id="with-bower" class="anchor" href="#with-bower" aria-hidden="true"><span class="octicon octicon-link"></span></a>With Bower</h4>
+
+<div class="highlight highlight-source-shell"><pre>$ bower install vendor-lib.js --save </pre></div>
+
+<h4>
+<a id="without-bower" class="anchor" href="#without-bower" aria-hidden="true"><span class="octicon octicon-link"></span></a>Without Bower</h4>
+
+<p>Download library file in /src/vendors. It will automatically compile grunt dev or grunt</p>
+
+<h2>
+<a id="advanced-usage" class="anchor" href="#advanced-usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Advanced Usage</h2>
+
+<h3>
+<a id="customize-configjson" class="anchor" href="#customize-configjson" aria-hidden="true"><span class="octicon octicon-link"></span></a>Customize config.json</h3>
+
+<div class="highlight highlight-source-json"><pre>{
+  <span class="pl-s"><span class="pl-pds">"</span>root_src<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>src<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>root_public<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>public<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>dir_vendors<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>vendors<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>dir_js<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>js<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>dir_css<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>css<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>gruntfile<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Gruntfile.js<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>pkgjson_file<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>package.json<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>bowerrc_file<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>.bowerrc<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>dir_grunt<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>./grunt<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>output_js_app<span class="pl-pds">"</span></span>: <span class="pl-c1">false</span>,
+  <span class="pl-s"><span class="pl-pds">"</span>output_js_vendors<span class="pl-pds">"</span></span>: <span class="pl-c1">false</span>,
+  <span class="pl-s"><span class="pl-pds">"</span>host<span class="pl-pds">"</span></span>: {
+    <span class="pl-s"><span class="pl-pds">"</span>local<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>http://localhost/grower-js/public<span class="pl-pds">"</span></span>
+  },
+  <span class="pl-s"><span class="pl-pds">"</span>global_namespace<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>grwr<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>browser<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Chrome<span class="pl-pds">"</span></span>
+}</pre></div>
+
+<h3>
+<a id="customize-grunt-tasks" class="anchor" href="#customize-grunt-tasks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Customize grunt tasks</h3>
+
+<blockquote>
+<p>TODO</p>
+</blockquote>
+
+<ul>
+<li>availabletask</li>
+<li>bower_concat</li>
+<li>complexity</li>
+<li>jshint</li>
+<li>open</li>
+<li>requirejs</li>
+<li>uglify</li>
+<li>usebanner</li>
+<li>watch</li>
+</ul>
+
+<h3>
+<a id="add-grunt-tasks" class="anchor" href="#add-grunt-tasks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Add grunt tasks</h3>
+
+<blockquote>
+<p>// TODO</p>
+</blockquote>
+
+<h2>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h2>
+
+<p><strong>Single one page app</strong></p>
+
+<blockquote>
+<p>// TODO</p>
+</blockquote>
+
+<p><strong>Multi-pages site</strong></p>
+
+<blockquote>
+<p>// TODO</p>
+</blockquote>
+
+<p><strong>Simple templating with Underscore</strong></p>
+
+<blockquote>
+<p>// TODO </p>
+</blockquote>
+
+<h2>
+<a id="faqtroubleshotting" class="anchor" href="#faqtroubleshotting" aria-hidden="true"><span class="octicon octicon-link"></span></a>FAQ/Troubleshotting</h2>
+
+<p><strong>Localhost / open-browser</strong></p>
+
+<blockquote>
+<p>// TODO</p>
+</blockquote>
+
+<ul>
+<li>Check wamp configuration</li>
+<li>Check root location</li>
+<li>Check browser configuration in config.json</li>
+</ul>
+
+<p><strong>RequireJS / Almond</strong></p>
+
+<blockquote>
+<p>// TODO</p>
+</blockquote>
+
+<p><strong>// Todo</strong></p>
+
+<blockquote>
+<p>// TODO</p>
+</blockquote>
+
+<h2>
+<a id="contribute" class="anchor" href="#contribute" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contribute</h2>
+
+<ul>
+<li>Issue Tracker: <a href="https://github.com/proustibat/grower-js/issues">https://github.com/proustibat/grower-js/issues</a>
+</li>
+<li>Source Code: <a href="https://github.com/proustibat/grower-js">https://github.com/proustibat/grower-js</a>
+</li>
+</ul>
+
+<h2>
+<a id="author" class="anchor" href="#author" aria-hidden="true"><span class="octicon octicon-link"></span></a>Author</h2>
+
+<p><strong>Jennifer Proust</strong></p>
+
+<ul>
+<li><a href="https://github.com/proustibat">github/proustibat</a></li>
+<li><a href="http://twitter.com/proustibat">twitter/proustibat</a></li>
+</ul>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p><a href="http://www.gnu.org/licenses/gpl-3.0.en.html/">GPL-3.0 License</a> © Proustibat, Inc. 2015</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/proustibat">proustibat</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
