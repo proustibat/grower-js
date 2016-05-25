@@ -292,5 +292,6 @@ Download library file in /src/vendors. It will automatically compile grunt dev o
 * [github/proustibat](https://github.com/proustibat)
 * [twitter/proustibat](http://twitter.com/proustibat)
 
+
 ## License
-[GPL-3.0 License](http://www.gnu.org/licenses/gpl-3.0.en.html/) © Proustibat, Inc. 2015
+[MIT](./LICENSE)
