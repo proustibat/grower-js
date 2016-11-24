@@ -1,4 +1,4 @@
-Grower-js [![Code Climate](https://codeclimate.com/github/proustibat/grower-js/badges/gpa.svg)](https://codeclimate.com/github/proustibat/grower-js) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/proustibat/grower-js?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) ![Dependencies Updates Status](https://david-dm.org/proustibat/bowboosh.svg)
+Grower-js [![Code Climate](https://codeclimate.com/github/proustibat/grower-js/badges/gpa.svg)](https://codeclimate.com/github/proustibat/grower-js) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/proustibat/grower-js?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) ![Dependencies Updates Status](https://david-dm.org/proustibat/grower-js.svg)
 ========
 
 > A simple boilerplate for frontend developers for building modular web apps or sites with [Node.js](https://nodejs.org/en/), [Bower](http://bower.io/), [RequireJS](http://requirejs.org/) (amd) and [Grunt](http://gruntjs.com/).
